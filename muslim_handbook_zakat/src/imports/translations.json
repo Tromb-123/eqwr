@@ -1,0 +1,20 @@
+{
+  "language": "ru",
+  "translation": {
+    "name": "Русский — Эльмир Кулиев",
+    "translator": "Эльмир Кулиев",
+    "source": "Tanzil.net",
+    "fileUrl": "https://cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/quran_ru.json",
+    "repository": "https://github.com/risan/quran-json",
+    "license": "CC BY-SA 4.0 for the quran-json dataset; preserve the upstream attribution and source notices.",
+    "description": "Готовый JSON-файл с 114 сурами и переводом каждого аята. Перевод: Эльмир Кулиев; источник перевода: Tanzil.net."
+  },
+  "english": {
+    "name": "English — Saheeh International",
+    "translator": "Saheeh International",
+    "file": "quran-en.json",
+    "format": "114 surahs, array of verse strings; verse-number prefixes and footnote markers removed; translator insertions in [brackets] kept",
+    "verses": 6236,
+    "note": "Bundled with the app and loaded on demand. Confirm redistribution terms with the rights holder before publishing."
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "description": "Provides a placeholder interface allowing users to plan and prepare without triggering any actions, ideal for cautious testing or staged workflows.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
