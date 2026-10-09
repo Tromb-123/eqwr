@@ -2704,8 +2704,14 @@ footer {
   overflow: hidden;
   pointer-events: none;
   transform: translateX(-50%);
-  -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 72%, transparent 100%);
-  mask-image: linear-gradient(to bottom, #000 0%, #000 72%, transparent 100%);
+  -webkit-mask-image:
+    linear-gradient(to bottom, transparent 0%, #000 5%, #000 68%, transparent 100%),
+    linear-gradient(to right, transparent 0%, #000 4%, #000 93%, transparent 100%);
+  -webkit-mask-composite: source-in;
+  mask-image:
+    linear-gradient(to bottom, transparent 0%, #000 5%, #000 68%, transparent 100%),
+    linear-gradient(to right, transparent 0%, #000 4%, #000 93%, transparent 100%);
+  mask-composite: intersect;
 }
 
 .mosque-hero::after {
@@ -2720,7 +2726,9 @@ footer {
       color-mix(in srgb, var(--paper) 34%, transparent) 43%,
       transparent 72%
     ),
-    linear-gradient(to bottom, transparent 58%, var(--paper) 100%);
+    linear-gradient(to bottom, transparent 58%, var(--paper) 100%),
+    linear-gradient(to bottom, color-mix(in srgb, var(--paper) 55%, transparent) 0%, transparent 10%),
+    linear-gradient(270deg, color-mix(in srgb, var(--paper) 35%, transparent) 0%, transparent 14%);
   transition: background 900ms ease;
 }
 
@@ -2872,7 +2880,9 @@ footer {
         color-mix(in srgb, var(--paper) 30%, transparent) 68%,
         transparent 100%
       ),
-      linear-gradient(to bottom, transparent 54%, var(--paper) 100%);
+      linear-gradient(to bottom, transparent 54%, var(--paper) 100%),
+      linear-gradient(to bottom, color-mix(in srgb, var(--paper) 50%, transparent) 0%, transparent 8%),
+      linear-gradient(270deg, color-mix(in srgb, var(--paper) 30%, transparent) 0%, transparent 12%);
   }
 
   .hero-moon {
